@@ -4,15 +4,25 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './styles/**/*.css'
   ],
   theme: {
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
       },
-    },
+      colors: {
+        primary: '#FF6363',
+        secondary: {
+          100: '#E2E2D5',
+          200: '#888883'
+        }
+      },
+      fontFamily: {
+        body: ['Nunito']
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 }
